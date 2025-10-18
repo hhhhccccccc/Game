@@ -1,0 +1,232 @@
+{
+    "FileVersion": "2.3.1",
+    "EnableAddressable": true,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "OutputNameStyle": 0,
+    "BuildBundleType": 1,
+    "BuildPipeline": "EditorSimulateBuildPipeline",
+    "PackageName": "DefaultPackage",
+    "PackageVersion": "Simulate",
+    "PackageNote": "2025/10/18 21:56:55",
+    "AssetList": [
+        {
+            "Address": "ProgressBar",
+            "AssetPath": "Assets/GameResource/Prefab/Func/ProgressBar.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UVLimit",
+            "AssetPath": "Assets/GameResource/Shader/UVLimit.shader",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game.Config",
+            "AssetPath": "Assets/Scripts/Config/Game.Config.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game.Const",
+            "AssetPath": "Assets/Scripts/Const/Game.Const.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game.Controller",
+            "AssetPath": "Assets/Scripts/Controller/Game.Controller.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "DebugConfig",
+            "AssetPath": "Assets/Scripts/Debug/DebugConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game.Interface",
+            "AssetPath": "Assets/Scripts/Interface/Game.Interface.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game.Manager",
+            "AssetPath": "Assets/Scripts/Manager/Game.Manager.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game.Message",
+            "AssetPath": "Assets/Scripts/Message/Game.Message.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game.Model",
+            "AssetPath": "Assets/Scripts/Model/Game.Model.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MonoEx",
+            "AssetPath": "Assets/Scripts/MonoEx/MonoEx.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game.View",
+            "AssetPath": "Assets/Scripts/View/Game.View.asmdef",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": []
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "assets_gameresource_prefab_func_progressbar.bundle",
+            "UnityCRC": 0,
+            "FileHash": "5b7917d2258ec49cf61867c027f7e9e4",
+            "FileCRC": "00000000",
+            "FileSize": 7563,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_config_game_config.bundle",
+            "UnityCRC": 0,
+            "FileHash": "54df35217f2b8803c1c1c2d12a3f6075",
+            "FileCRC": "00000000",
+            "FileSize": 397,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_const_game_const.bundle",
+            "UnityCRC": 0,
+            "FileHash": "29c167efabb105db726a43d43337d22f",
+            "FileCRC": "00000000",
+            "FileSize": 353,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_controller_game_controller.bundle",
+            "UnityCRC": 0,
+            "FileHash": "28bd31bb69e9248e0f083075d2c084f4",
+            "FileCRC": "00000000",
+            "FileSize": 808,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_debug_debugconfig.bundle",
+            "UnityCRC": 0,
+            "FileHash": "b94ea8f7b8efa90833ad7ad974c1dbaa",
+            "FileCRC": "00000000",
+            "FileSize": 963,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_interface_game_interface.bundle",
+            "UnityCRC": 0,
+            "FileHash": "3d830788131aadd1caaa938638c0849f",
+            "FileCRC": "00000000",
+            "FileSize": 512,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_manager_game_manager.bundle",
+            "UnityCRC": 0,
+            "FileHash": "ab5546ad4b2abe9b37ffddd269cf15a2",
+            "FileCRC": "00000000",
+            "FileSize": 851,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_message_game_message.bundle",
+            "UnityCRC": 0,
+            "FileHash": "01dc1e7150907c39fb67d43be4b73516",
+            "FileCRC": "00000000",
+            "FileSize": 459,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_model_game_model.bundle",
+            "UnityCRC": 0,
+            "FileHash": "a38c6c8fc246acfd5ebf038002f3b07a",
+            "FileCRC": "00000000",
+            "FileSize": 651,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_monoex_monoex.bundle",
+            "UnityCRC": 0,
+            "FileHash": "f645feb862aa01e6f9a60ffa5964f901",
+            "FileCRC": "00000000",
+            "FileSize": 345,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_scripts_view_game_view.bundle",
+            "UnityCRC": 0,
+            "FileHash": "44f6cbc845e182f24c4d2d80ae682b52",
+            "FileCRC": "00000000",
+            "FileSize": 894,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "UnityCRC": 0,
+            "FileHash": "20357b7b6badb818cac2923702809097",
+            "FileCRC": "00000000",
+            "FileSize": 1691,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        }
+    ]
+}
