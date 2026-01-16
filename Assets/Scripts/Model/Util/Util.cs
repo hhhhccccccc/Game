@@ -6,74 +6,8 @@ using cfg;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public static class Util
+public static class Util 
 {
-    public static List<BattleKeyType> KeyList = new()
-    {
-        BattleKeyType.KeyUp,
-        BattleKeyType.KeyDown,
-        BattleKeyType.KeyLeft,
-        BattleKeyType.KeyRight,
-    };
-
-    public static List<BattleKeyType> KeyList_NotHasUp = new()
-    {
-        BattleKeyType.KeyDown,
-        BattleKeyType.KeyLeft,
-        BattleKeyType.KeyRight,
-    };
-    
-    public static List<BattleKeyType> KeyList_NotHasDown = new()
-    {
-        BattleKeyType.KeyUp,
-        BattleKeyType.KeyLeft,
-        BattleKeyType.KeyRight,
-    };
-    
-    public static List<BattleKeyType> KeyList_NotHasLeft = new()
-    {  
-        BattleKeyType.KeyUp,
-        BattleKeyType.KeyDown,
-        BattleKeyType.KeyRight,
-    };
-    
-    public static List<BattleKeyType> KeyList_NotHasRight = new()
-    {
-        BattleKeyType.KeyUp,
-        BattleKeyType.KeyDown,
-        BattleKeyType.KeyLeft,
-    };
-    public static int GetRandomInt(int min, int max) => Random.Range(min, max);
-    public static float GetRandomFloat(float min, float max) => Random.Range(min, max);
-    public static List<BattleKeyType> GetRandomKey(int count, int ignoreKeyType = 0)
-    {
-        var list = KeyList;
-        if (ignoreKeyType == 1)
-        {
-            list = KeyList_NotHasUp;
-        }
-        if (ignoreKeyType == 2)
-        {
-            list = KeyList_NotHasDown;
-        }
-        if (ignoreKeyType == 3)
-        {
-            list = KeyList_NotHasLeft;
-        }
-        if (ignoreKeyType == 4)
-        {
-            list = KeyList_NotHasRight;
-        }
-        var result = new List<BattleKeyType>();
-        for (int i = 0; i < count; i++)
-        {
-            var key = GetRandom<BattleKeyType>(list);
-            result.Add(key);
-        }
-
-        return result;
-    }
-
     public static T GetRandom<T>(List<T> list)
     {
         var count = list.Count;
