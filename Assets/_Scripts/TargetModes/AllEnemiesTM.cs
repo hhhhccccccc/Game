@@ -1,0 +1,9 @@
+using System.Collections.Generic;
+
+public class AllEnemiesTM : TargetMode
+{
+    public override List<CombatantView> GetTargets()
+    {
+        return new List<CombatantView>(EnemySystem.Instance.Enemies);
+    }
+}

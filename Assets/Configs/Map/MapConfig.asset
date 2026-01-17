@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22af264a17bd446f8285c2d4023454a4, type: 3}
+  m_Name: MapConfig
+  m_EditorClassIdentifier: Assembly-CSharp::MapConfig
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  mapNode: {fileID: 3172544382947270269, guid: e1951778e15ebdb4ea6c87c92f191b98, type: 3}
+  layerCount: {x: 25, y: 19}
+  repetitionCount: 5
+  roomTypes: 0000000001000000020000000300000004000000050000000600000007000000

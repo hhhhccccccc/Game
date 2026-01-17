@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5cc2bc43604e545bd556ad666a1d73, type: 3}
+  m_Name: CounterAttack
+  m_EditorClassIdentifier: Assembly-CSharp::PerkConfig
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: <PerkCondition>k__BackingField
+      Entry: 7
+      Data: 0|OnEnemyAttackCondition, Assembly-CSharp
+    - Name: reactionTiming
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <AutoTargetEffect>k__BackingField
+      Entry: 7
+      Data: 1|AutoTargetEffect, Assembly-CSharp
+    - Name: TargetMode
+      Entry: 7
+      Data: 2|NoTM, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Effect
+      Entry: 7
+      Data: 3|DealDamageEffect, Assembly-CSharp
+    - Name: damageAmount
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  <Image>k__BackingField: {fileID: 21300000, guid: c4ff8c4d3a11b8641b8724e9b33fa502, type: 3}
+  <UseAutoTarget>k__BackingField: 0
+  <UseActionCasterAsTarget>k__BackingField: 1

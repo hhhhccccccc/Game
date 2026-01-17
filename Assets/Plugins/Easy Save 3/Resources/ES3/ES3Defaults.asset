@@ -31,6 +31,9 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp
+    - Assembly-CSharp-firstpass
+    - CFXREditor
+    - CFXRRuntime
     - Game.Config
     - Game.Const
     - Game.Controller
@@ -48,8 +51,6 @@ MonoBehaviour:
     - MonoEx
     - Plugins.ES3
     - PPv2URPConverters
-    - Sirenix.OdinInspector.CompatibilityLayer
-    - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - Sirenix.OdinInspector.Modules.UnityMathematics
     - YooAsset
     - YooAsset.Editor
