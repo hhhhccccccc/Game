@@ -1,19 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ES3Internal;
-using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
 using UnityEditor;
-using UnityEditor.SceneManagement;
-using System.Reflection;
-using System;
 #endif
 
-#if UNITY_VISUAL_SCRIPTING
-using Unity.VisualScripting;
-[IncludeInSettings(true)]
-#endif
 public class ES3ReferenceMgr : ES3ReferenceMgrBase
 {
 #if UNITY_EDITOR

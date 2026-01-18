@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 #if UNITY_VISUAL_SCRIPTING
-[Unity.VisualScripting.IncludeInSettings(true)]
+
 #elif BOLT_VISUAL_SCRIPTING
 [Ludiq.IncludeInSettings(true)]
 #endif

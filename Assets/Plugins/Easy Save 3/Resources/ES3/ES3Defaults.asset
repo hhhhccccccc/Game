@@ -34,29 +34,15 @@ MonoBehaviour:
     - Assembly-CSharp-firstpass
     - CFXREditor
     - CFXRRuntime
-    - Game.Config
-    - Game.Const
-    - Game.Controller
-    - Game.Interface
-    - Game.Manager
-    - Game.Message
-    - Game.Model
-    - Game.View
     - HybridCLR.Editor
     - HybridCLR.Runtime
-    - LeanTween.Editor
-    - LeanTween.Runtime
     - Luban.Editor
     - Luban.Runtime
-    - MonoEx
     - Plugins.ES3
     - PPv2URPConverters
     - Sirenix.OdinInspector.Modules.UnityMathematics
     - YooAsset
     - YooAsset.Editor
-    - Zenject
-    - Zenject-IntegrationTests
-    - Zenject-TestFramework
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
