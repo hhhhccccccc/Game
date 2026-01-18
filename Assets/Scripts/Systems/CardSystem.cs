@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class CardSystem : Singleton<CardSystem>
@@ -9,15 +10,16 @@ public class CardSystem : Singleton<CardSystem>
     [SerializeField] private Transform drawPilePoint;
     [SerializeField] private Transform discardPilePoint;
 
-    private readonly List<CardData> drawPile = new();
-    private readonly List<CardData> discardPile = new();
-    private readonly List<CardData> handPile = new();
+    [ShowInInspector] private readonly List<CardData> drawPile = new();
+    [ShowInInspector] private readonly List<CardData> discardPile = new();
+    [ShowInInspector] private readonly List<CardData> handPile = new();
 
     private void OnEnable()
     {
         ActionSystem.AttachPerformer<DrawCardsGA>(DrawCardsPerformer);
         ActionSystem.AttachPerformer<DiscardAllCardsGA>(DiscardAllCardsPerformer);
         ActionSystem.AttachPerformer<PlayCardGA>(PlayCardPerformer);
+        ActionSystem.AttachPerformer<EchoCardsGA>(EchoCardsPerformer);
     }
 
     private void OnDisable()
@@ -25,13 +27,25 @@ public class CardSystem : Singleton<CardSystem>
         ActionSystem.DetachPerformer<DrawCardsGA>();
         ActionSystem.DetachPerformer<DiscardAllCardsGA>();
         ActionSystem.DetachPerformer<PlayCardGA>();
+        ActionSystem.DetachPerformer<EchoCardsGA>();
     }
 
-    public void Setup(List<CardConfig> deckConfig)
+    #region 旧方法
+    public void Setup(HeroConfig heroConfig)
     {
-        foreach (CardConfig config in deckConfig)
+        foreach (CardConfig cardConfig in heroConfig.Deck)
         {
-            CardData cardData = new(config);
+            CardData cardData = new(cardConfig);
+            drawPile.Add(cardData);
+        }
+    }
+    #endregion
+
+    public void Setup(CardInfoContainer cardInfoContainer)
+    {
+        foreach (KeyValuePair<int, CardInfo> dic in cardInfoContainer.dataDic)
+        {
+            CardData cardData = new(dic.Value);
             drawPile.Add(cardData);
         }
     }
@@ -60,7 +74,7 @@ public class CardSystem : Singleton<CardSystem>
 
     private void RefillDeck()
     {
-        drawPile.AddRange(discardPile);
+        // drawPile.AddRange(discardPile);
         discardPile.Clear();
     }
 
@@ -80,8 +94,6 @@ public class CardSystem : Singleton<CardSystem>
         handPile.Remove(playCardGA.CardData);
         CardView cardView = handView.RemoveCard(playCardGA.CardData);
         yield return DiscardCard(cardView);
-        SpendManaGA spendManaGA = new(playCardGA.CardData.Mana);
-        ActionSystem.Instance.AddReaction(spendManaGA);
         if (playCardGA.CardData.ManualTargetEffect != null)
         {
             PerformEffectGA performEffectGA = new(playCardGA.CardData.ManualTargetEffect, new List<CombatantView>
@@ -104,6 +116,23 @@ public class CardSystem : Singleton<CardSystem>
         discardPile.Add(cardView.CardData);
         cardView.transform.DOScale(Vector3.zero, 0.15f);
         Tween tween = cardView.transform.DOMove(discardPilePoint.position, 0.15f);
+        yield return tween.WaitForCompletion();
+        Destroy(cardView.gameObject);
+    }
+
+    private IEnumerator EchoCardsPerformer(EchoCardsGA echoCardsGA)
+    {
+        for (int i = 0; i < echoCardsGA.EchoAmount; i++)
+        {
+            drawPile.Add(new CardData(echoCardsGA.CardConfig));
+            CardView cardView = CardViewCreator.Instance.CreateCardView(new CardData(echoCardsGA.CardConfig), Vector3.zero, Quaternion.identity);
+            yield return EchoPerformance(cardView);
+        }
+    }
+
+    public IEnumerator EchoPerformance(CardView cardView)
+    {
+        Tween tween = cardView.transform.DOMove(drawPilePoint.position, 0.15f);
         yield return tween.WaitForCompletion();
         Destroy(cardView.gameObject);
     }

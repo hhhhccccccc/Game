@@ -34,15 +34,9 @@ MonoBehaviour:
     - Assembly-CSharp-firstpass
     - CFXREditor
     - CFXRRuntime
-    - HybridCLR.Editor
-    - HybridCLR.Runtime
-    - Luban.Editor
-    - Luban.Runtime
     - Plugins.ES3
     - PPv2URPConverters
     - Sirenix.OdinInspector.Modules.UnityMathematics
-    - YooAsset
-    - YooAsset.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

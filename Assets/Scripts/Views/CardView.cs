@@ -6,7 +6,8 @@ public class CardView : MonoBehaviour
 {
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text description;
-    [SerializeField] private TMP_Text mana;
+    [SerializeField] private TMP_Text type;
+    [SerializeField] private TMP_Text rarity;
     [SerializeField] private SpriteRenderer imageSR;
     [SerializeField] private GameObject wrapper;
     [SerializeField] private LayerMask dropLayer;
@@ -18,10 +19,32 @@ public class CardView : MonoBehaviour
     public void Setup(CardData data)
     {
         CardData = data;
-        title.text = data?.Title ?? "No Title";
-        description.text = data?.Description ?? "No Description";
-        mana.text = data?.Mana.ToString() ?? "0";
+        title.text = data?.Name ?? "No Title";
+        description.text = data?.Desc ?? "No Description";
+        if (data.CDTurns > 0)
+            description.text += $"，CD: {data.CDTurns}";
+        if (data.IsEcho)
+            description.text += "，回响";
+        type.text = data?.Type ?? "No Type";
+        rarity.text = data?.Rarity switch
+        {
+            "1级：普通卡" => "普通",
+            "2级：稀有卡" => "稀有",
+            "3级：超级卡" => "超级",
+            "4级：传说卡" => "传说",
+            _ => "普通"
+        };
+
+        rarity.color = data.Rarity switch
+        {
+            "1级：普通卡" => Color.gray,
+            "2级：稀有卡" => Color.blue,
+            "3级：超级卡" => Color.magenta,
+            "4级：传说卡" => Color.yellow,
+            _ => Color.white
+        };
         imageSR.sprite = data?.Image;
+        
     }
 
     public void UpdatePositionRotation(Vector3 pos, Quaternion rot, float duration)
@@ -77,7 +100,7 @@ public class CardView : MonoBehaviour
         if (CardData.ManualTargetEffect != null)
         {
             EnemyView target = ManualTargetSystem.Instance.EndTargeting(MouseUtil.GetMousePositionInWorldSpace(-1));
-            if (target != null && ManaSystem.Instance.HasEnoughMana(CardData.Mana))
+            if (target != null)
             {
                 PlayCardGA playCardGA = new(CardData, target);
                 ActionSystem.Instance.Perform(playCardGA);
@@ -85,8 +108,7 @@ public class CardView : MonoBehaviour
         }
         else
         {
-            if (ManaSystem.Instance.HasEnoughMana(CardData.Mana)
-                && Physics.Raycast(transform.position, Vector3.forward, out RaycastHit hit, 10f, dropLayer))
+            if ( Physics.Raycast(transform.position, Vector3.forward, out RaycastHit hit, 10f, dropLayer))
             {
                 PlayCardGA playCardGA = new(CardData);
                 ActionSystem.Instance.Perform(playCardGA);

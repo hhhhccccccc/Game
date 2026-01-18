@@ -21,23 +21,14 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  <Image>k__BackingField: {fileID: 21300000, guid: 5ec29d103dc911641a5f0d8bc49c9436, type: 3}
+  <Image>k__BackingField: {fileID: 21300000, guid: d59c9ffa032c3894faaf4b2ae074da0e,
+    type: 3}
   <Health>k__BackingField: 44
   <Deck>k__BackingField:
-  - {fileID: 11400000, guid: e3fa7570aba52a349a96ade2dd522c9a, type: 2}
+  - {fileID: 11400000, guid: 5251279a1f250f04d83d0738a6809598, type: 2}
+  - {fileID: 11400000, guid: e734daadc0ceaba47a464fa69d2ff95f, type: 2}
   - {fileID: 11400000, guid: e3fa7570aba52a349a96ade2dd522c9a, type: 2}
   - {fileID: 11400000, guid: 731f4d4f041ab7e43aa043e94eb0ef02, type: 2}
-  - {fileID: 11400000, guid: 731f4d4f041ab7e43aa043e94eb0ef02, type: 2}
-  - {fileID: 11400000, guid: 5251279a1f250f04d83d0738a6809598, type: 2}
-  - {fileID: 11400000, guid: 5251279a1f250f04d83d0738a6809598, type: 2}
-  - {fileID: 11400000, guid: 5251279a1f250f04d83d0738a6809598, type: 2}
-  - {fileID: 11400000, guid: 5251279a1f250f04d83d0738a6809598, type: 2}
-  - {fileID: 11400000, guid: 5251279a1f250f04d83d0738a6809598, type: 2}
-  - {fileID: 11400000, guid: 03146bcca3897c347bbb8cf3cc1a9b78, type: 2}
-  - {fileID: 11400000, guid: 03146bcca3897c347bbb8cf3cc1a9b78, type: 2}
-  - {fileID: 11400000, guid: 03146bcca3897c347bbb8cf3cc1a9b78, type: 2}
-  - {fileID: 11400000, guid: 03146bcca3897c347bbb8cf3cc1a9b78, type: 2}
-  - {fileID: 11400000, guid: 03146bcca3897c347bbb8cf3cc1a9b78, type: 2}
+  - {fileID: 11400000, guid: e734daadc0ceaba47a464fa69d2ff95f, type: 2}
   - {fileID: 11400000, guid: e2f1e79662f27254fad246a51f76e360, type: 2}
-  - {fileID: 11400000, guid: e2f1e79662f27254fad246a51f76e360, type: 2}
-  - {fileID: 11400000, guid: e2f1e79662f27254fad246a51f76e360, type: 2}
+  - {fileID: 11400000, guid: 03146bcca3897c347bbb8cf3cc1a9b78, type: 2}

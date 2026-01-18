@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02dcf76987da067419cb46f3b8ac8a35, type: 3}
   m_Name: Red Slime
   m_EditorClassIdentifier: Assembly-CSharp::EnemyConfig
-  <Image>k__BackingField: {fileID: 21300000, guid: 9030dcb099d417141bc3286194d6a4f3, type: 3}
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  <Image>k__BackingField: {fileID: 21300000, guid: 8421b76fb4f8d154cb68f1658aef7fbf,
+    type: 3}
   <Health>k__BackingField: 26
   <AttackPower>k__BackingField: 6

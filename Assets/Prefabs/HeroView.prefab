@@ -116,6 +116,47 @@ PrefabInstance:
       propertyPath: m_text
       value: HP:100
       objectReference: {fileID: 0}
+    - target: {fileID: 6487665137217827393, guid: f4d23e482fa97e44c9fa8d7144d000ce,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487665137217827393, guid: f4d23e482fa97e44c9fa8d7144d000ce,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487665137217827393, guid: f4d23e482fa97e44c9fa8d7144d000ce,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487665137217827393, guid: f4d23e482fa97e44c9fa8d7144d000ce,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207088686829417306, guid: f4d23e482fa97e44c9fa8d7144d000ce,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.1818182
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207088686829417306, guid: f4d23e482fa97e44c9fa8d7144d000ce,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.2272727
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207088686829417306, guid: f4d23e482fa97e44c9fa8d7144d000ce,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d59c9ffa032c3894faaf4b2ae074da0e,
+        type: 3}
+    - target: {fileID: 9207088686829417306, guid: f4d23e482fa97e44c9fa8d7144d000ce,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

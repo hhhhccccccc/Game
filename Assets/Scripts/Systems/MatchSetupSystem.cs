@@ -11,7 +11,8 @@ public class MatchSetupSystem : MonoBehaviour
     {
         HeroSystem.Instance.Setup(heroConfig);
         EnemySystem.Instance.Setup(enemyConfigs);
-        CardSystem.Instance.Setup(heroConfig.Deck);
+        CardSystem.Instance.Setup(heroConfig);
+        // CardSystem.Instance.Setup(BinaryDataMgr.Instance.GetTable<CardInfoContainer>());
         PerkSystem.Instance.AddPerk(new PerkData(perkConfig));
         DrawCardsGA drawCardsGA = new(5);
         ActionSystem.Instance.Perform(drawCardsGA);

@@ -21,8 +21,7 @@ public class BinaryDataMgr
             return;
         isInit = true;
         //在此加载表格数据：
-        // LoadTable<AIInfoContainer, AIInfo>();
-        // LoadTable<PlayerLevInfoContainer, PlayerLevInfo>();
+        LoadTable<CardInfoContainer, CardInfo>();
     }
 
     public void LoadTable<T, K>()
